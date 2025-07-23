@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1a2a6c">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайна Cicada 3301</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cicada 3301</h1>
+        <p>Самая загадочная интернет-головоломка</p>
+    </header>
+    <div class="content">
+        <h2>Кто такие Cicada 3301?</h2>
+        <p>Cicada 3301 — это анонимная группа, которая с 2012 года публикует сложные криптографические и стеганографические головоломки в интернете с целью набора "исключительных индивидуумов".</p>
+        <h2>История появления</h2>
+        <p>Первое сообщение появилось 4 января 2012 года на имиджборде 4chan с изображением цикады и текстом:</p>
+        <blockquote>"Привет. Мы ищем высокоинтеллектуальных людей. Чтобы найти их, мы разработали тест. В этом изображении спрятано сообщение. Найдите его, и оно приведёт вас к следующему шагу. Удачи."</blockquote>
+        <div class="puzzle">
+            <h3>Пример головоломки 3301</h3>
+            <p>Вот простой пример того, как могут выглядеть их загадки:</p>
+            <p>71 101 108 108 111 32 87 111 114 108 100</p>
+            <p><em>Подсказка: нужно преобразовать числа в ASCII символы (и это лишь 10% итоговой подсказки к следующей)</em></p>
+        </div>
+        <h2>Теории о целях организации</h2>
+        <ul>
+            <li>Набор в спецслужбы</li>
+            <li>Создание альтернативного интернета</li>
+            <li>Искусственный интеллект, тестирующий человечество</li>
+            <li>Социальный эксперимент</li>
+        </ul>
+        <div class="puzzle-buttons">
+            <a href="puzzle1.html" class="puzzle-btn">Головоломка 1</a>
+            <a href="puzzle2.html" class="puzzle-btn">Головоломка 2</a>
+            <a href="puzzle3.html" class="puzzle-btn">Головоломка 3</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Исследовательский проект о Cicada 3301</p>
+        <p>Этот сайт не связан с реальной группой Cicada 3301</p>
+    </footer>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+</body>
+</html>
