@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1a2a6c">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головоломка 1 - Cicada 3301</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Головоломка 1</h1>
+        <p>Первая загадка от Cicada 3301</p>
+    </header>
+    <div class="content">
+        <div class="puzzle">
+            <h2>Шифр Цезаря</h2>
+            <p>Расшифруйте следующее сообщение, используя шифр Цезаря со сдвигом 3:</p>
+            <p><strong>Khoor Zruog</strong></p>
+            <p><em>Подсказка: A → D, B → E, ..., Z → C</em></p>
+        </div>
+        <div class="puzzle-buttons">
+            <a href="index.html" class="puzzle-btn">На главную</a>
+            <a href="puzzle2.html" class="puzzle-btn">Следующая загадка</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Исследовательский проект о Cicada 3301</p>
+    </footer>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+</body>
+</html>

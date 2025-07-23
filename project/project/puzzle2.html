@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1a2a6c">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головоломка 2 - Cicada 3301</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Головоломка 2</h1>
+        <p>Вторая загадка от Cicada 3301</p>
+    </header>
+    <div class="content">
+        <div class="puzzle">
+            <h2>Двоичный код</h2>
+            <p>Переведите следующее двоичное сообщение в текст:</p>
+            <p><strong>01001000 01101001</strong></p>
+            <p><em>Подсказка: Каждая группа из 8 бит представляет один ASCII символ</em></p>
+        </div>
+        <div class="puzzle-buttons">
+            <a href="puzzle1.html" class="puzzle-btn">Предыдущая загадка</a>
+            <a href="index.html" class="puzzle-btn">На главную</a>
+            <a href="puzzle3.html" class="puzzle-btn">Следующая загадка</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Исследовательский проект о Cicada 3301</p>
+    </footer>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+</body>
+</html>
