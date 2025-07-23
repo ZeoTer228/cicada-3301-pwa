@@ -6,10 +6,7 @@ const urlsToCache = [
   '/puzzle1.html',
   '/puzzle2.html',
   '/puzzle3.html',
-  '/database.php',
-  '/icons/icon-72x72.png',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/icons/icon-128x128.png'
 ];
 
 self.addEventListener('install', event => {
